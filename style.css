@@ -64,7 +64,10 @@ nav {
 }
 
 /* nav-bar end */ 
+/* main content container start */ 
 .main {
     grid-area: 2 / 2 / 3 / 3;
     background-color: rgb(115, 153, 115);
 }
+
+/* main content container end */ 
