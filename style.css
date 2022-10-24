@@ -118,19 +118,24 @@ nav {
 
 .nav-bar > .title {
     grid-area: 1 / 1;
-    padding: 10px;
     color: white;
     display: grid;
     align-items: center;
-    gap: 10px;
     font-size: 22px;
+}
+
+.nav-bar > .title > h2 > .svg-icon {
+    width: 40px;
 }
 
 .nav-bar > .title > h2 {
     display: flex;
     align-items: center;
     padding: 10px;
+    gap: 10px;
 }
+
+
 
 .group-one {
     display: grid;
