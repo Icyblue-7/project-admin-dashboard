@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid rgb(255, 237, 237);
+    border: 1px solid #000;
 }
 
 .svg-icon {
@@ -135,8 +135,6 @@ nav {
     gap: 10px;
 }
 
-
-
 .group-one {
     display: grid;
     gap: 10px;
@@ -159,7 +157,7 @@ nav {
 
 .group-one > button > span, 
 .group-two > button > span {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: white;
 }
@@ -177,10 +175,11 @@ nav {
 .card {
     background-color: whitesmoke;
 }
-
+/* style for all cards */ 
 .projects {
     grid-area: 1 / 1 / 3 / 2;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 
@@ -188,20 +187,64 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    padding: 10px;
+    height: 100%;
 }
+
+/* main project container */ 
+
+.card.project {
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 5px;
+}
+
+.card.project > .buttons {
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+}
+
+.card.project > p {
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+}
+
+/* style rules for project cards */ 
+
 
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 
 .container.announcement {
-    display: grid;
-    gap: 10px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
+
+.card.alert {
+    margin: 0 30px;
+}
+
+.card.alert:nth-last-child(2) {
+    border-bottom: 1px solid #90909030;
+    border-top: 1px solid #90909030;
+}
+
+.card.alert > p {
+    color: rgb(68, 68, 68)
+}
+
+/* style rules for announcements */ 
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
