@@ -62,7 +62,7 @@ header {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 30px;
     align-items: center;
 }
 
