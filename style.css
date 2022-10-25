@@ -23,11 +23,16 @@ button:hover {
     transform: scale(1.2);
     justify-self: left;
 }
+
+html {
+    height: 100%;
+}
 /* css reset */ 
 
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100%;
 }
 
 
@@ -172,7 +177,7 @@ nav {
 /* nav-bar end */ 
 /* main content container start */ 
 .main {
-    grid-area: 2 / 2;
+    grid-area: 2 / 2 / 3 / 3;
     background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 2fr 1fr;
