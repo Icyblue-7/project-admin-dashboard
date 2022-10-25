@@ -11,6 +11,7 @@
 
 .account {
     width: 50px;
+    border-radius: 50%;
 }
 
 button {
@@ -32,7 +33,7 @@ header {
     background-color: #fff;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    padding: 20px;
+    padding: 10px;
 }
 
 .search {
@@ -74,7 +75,7 @@ header > .title {
 
 header > .title > .account {
     background-color: rgb(204, 204, 252);
-    width: 90px;
+    width: 80px;
 }
 
 header > .title > div {
@@ -226,7 +227,7 @@ nav {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 20px;
+    padding: 15px;
     background-color: whitesmoke;
     border-radius: 10px;
 }
@@ -241,14 +242,13 @@ nav {
 }
 
 .card.alert > p {
-    color: rgb(68, 68, 68)
+    color: rgb(68, 68, 68);
 }
 
 /* style rules for announcements */ 
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
-    padding: 10px;
     display: grid;
 }
 
@@ -256,7 +256,46 @@ nav {
     display: grid;
     gap: 10px;
     padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
+
+.card.trend {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* style for all trend cards */ 
+
+.card.trend > div > p:nth-child(2) {
+    color: rgb(68, 68, 68);
+}
+
+.card.trend > div > p {
+    padding: 2px;
+}
+
+/* font style for trend cards */ 
+
+.card.trend:nth-child(1) > .account.small {
+    background-color: rgb(179, 233, 165);
+}
+
+.card.trend:nth-child(2) > .account.small {
+    background-color: rgb(241, 199, 199);
+}
+
+.card.trend:nth-child(3) > .account.small {
+    background-color: rgb(204, 204, 252);
+}
+
+.card.trend:nth-child(4) > .account.small {
+    background-color: rgb(125, 114, 173);
+}
+
+/* trending accounts icon color */ 
 
 
 /* main content container end */ 
