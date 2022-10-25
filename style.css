@@ -16,6 +16,12 @@
 button {
     background: none;
     border: none;
+    border-radius: 20%;
+}
+
+button:hover {
+    transform: scale(1.2);
+    justify-self: left;
 }
 /* css reset */ 
 
